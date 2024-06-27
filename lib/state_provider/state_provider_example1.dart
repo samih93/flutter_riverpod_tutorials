@@ -5,8 +5,8 @@ final myStateProvider = StateProvider<int>((ref) {
   return 10;
 });
 
-class StateProviderExample extends ConsumerWidget {
-  const StateProviderExample({super.key});
+class StateProviderExample1 extends ConsumerWidget {
+  const StateProviderExample1({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -18,7 +18,7 @@ class StateProviderExample extends ConsumerWidget {
         child: const Icon(Icons.add),
       ),
       appBar: AppBar(
-        title: const Text("StateProviderExample"),
+        title: const Text("StateProviderExample 1 "),
       ),
       body: Center(child: Text("${ref.watch(myStateProvider)}")),
     );
