@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-final myStringProvider = Provider<String>((ref) {
-  return "hello";
-});
+import 'package:youtube_riverpod_tutorials/consumer_widget_consumer_stateful_widget/cosumer_widget_example.dart';
 
 class ConsumerStatefullWidgetExample extends ConsumerStatefulWidget {
   const ConsumerStatefullWidgetExample({super.key});
@@ -19,13 +16,11 @@ class _ConsumerStatefullWidgetExampleState
   void initState() {
     // TODO: implement initState
     super.initState();
-    ref.read(myStringProvider);
+    print(ref.read(mysTringProvider));
   }
 
   @override
   Widget build(BuildContext context) {
-    ref.read(myStringProvider);
-    ref.watch(myStringProvider);
     return Container();
   }
 }
