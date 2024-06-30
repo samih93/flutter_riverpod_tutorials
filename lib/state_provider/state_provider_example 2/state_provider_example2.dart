@@ -5,7 +5,7 @@ import 'package:youtube_riverpod_tutorials/state_provider/state_provider_example
 import 'package:youtube_riverpod_tutorials/state_provider/state_provider_example%202/screens/screen3.dart';
 
 final currentMainIndexProvider = StateProvider<int>((ref) {
-  return 0;
+  return 1;
 });
 
 class StateProviderExample2 extends ConsumerWidget {
@@ -24,6 +24,7 @@ class StateProviderExample2 extends ConsumerWidget {
     const BottomNavigationBarItem(
         icon: Icon(Icons.holiday_village), label: "village"),
   ];
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
