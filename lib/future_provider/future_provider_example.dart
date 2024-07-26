@@ -20,7 +20,7 @@ class FutureProviderExample extends ConsumerWidget {
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             //  ref.invalidate(userFutureProvider);
-            ref.refresh((userFutureProvider));
+            ref.refresh(userFutureProvider);
             Navigator.pushAndRemoveUntil(
               context,
               MaterialPageRoute(
