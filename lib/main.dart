@@ -4,6 +4,7 @@ import 'package:youtube_riverpod_tutorials/change_notifier_provider/change_notif
 import 'package:youtube_riverpod_tutorials/consumer_widget_consumer_stateful_widget/consumer_statefull_widget_example.dart';
 import 'package:youtube_riverpod_tutorials/consumer_widget_consumer_stateful_widget/cosumer_widget_example.dart';
 import 'package:youtube_riverpod_tutorials/future_provider/future_provider_example.dart';
+import 'package:youtube_riverpod_tutorials/future_provider_family/future_provider_family_example.dart';
 import 'package:youtube_riverpod_tutorials/home_screen.dart';
 import 'package:youtube_riverpod_tutorials/state_notifier_state_notifier_provider/state_notifier_provider_example.dart';
 import 'package:youtube_riverpod_tutorials/state_provider/state_provider_example%202/state_provider_example2.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const FutureProviderExample(),
+      home: const FutureProviderFamilyExample(),
     );
   }
 }
